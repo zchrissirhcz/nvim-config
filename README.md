@@ -7,3 +7,7 @@ git clone neovim-config ~/.config/nvim
 
 Windows:
 git clone https://gitee.com/aczz/neovim-config $env:USERPROFILE/AppData/Local/nvim
+
+## trouble shooting
+
+ rm -rf ~/.local/share/nvim/
