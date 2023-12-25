@@ -2,7 +2,7 @@
 
 ## Install
 
-把 neovim 作为 IDE 的配置。基于 lua.
+把 neovim 作为 IDE 的配置。 配置文件基于 lua(init.lua), 需要先安装 lua 解释器。
 
 Linux:
 git clone neovim-config ~/.config/nvim
