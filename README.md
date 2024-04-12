@@ -1,4 +1,6 @@
-# neovim config
+# nvim ide
+
+尝试把 nvim 配置成 ide, 替代部分 vscode 功能(太卡了)
 
 ## Install
 
