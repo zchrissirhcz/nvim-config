@@ -225,3 +225,14 @@ require("nvim-tree").setup()
 " 如果要分屏查看，在第二屏打开文件
 " 先执行 :vs
 " 然后在 nvim-tree 的 tab 页面中，按下回车，它会自动询问是在哪个标签页打开
+
+"----------------------------------------
+" Telescope 配置和使用
+"----------------------------------------
+" 映射 \t 以自动输入 :Telescope 命令
+nnoremap <leader>t :Telescope<Space>
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
