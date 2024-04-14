@@ -14,11 +14,23 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
+powershell(admin):
+```pwsh
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+```
+
 ### 安装 rigrep
 
 https://github.com/BurntSushi/ripgrep
 
 用于 Telescope 的 live_grep 和 live_string
+
+powershell(admin):
+```pwsh
+# rigrep
+choco install rigrep
+```
 
 ## 插件介绍
 

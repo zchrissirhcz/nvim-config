@@ -2,7 +2,7 @@
 " Author: Zhuo Zhang
 " Homepage: https://github.com/zchrissirhcz
 " Create: 2024.04.13 00:00:00
-" Change: 2024.04.14 10:50:00
+" Change: 2024.04.14 22:00:00
 
 "----------------------------------------
 " 0. 插件
@@ -140,7 +140,9 @@ set listchars=tab:🡢\ ,trail:·,extends:>,precedes:<,space:·
 " :Telescope find_file
 " :Telescope live_grep
 
+"----------------------------------------
 " 8. nvim-treesitter
+"----------------------------------------
 " 这里是用 lua 配置的
 " 在 init.vim 里也可以用 lua 配置的
 " :h :lua-heredoc 查看
