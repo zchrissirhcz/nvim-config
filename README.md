@@ -1,6 +1,6 @@
-# nvim-IDE
+# NvimCode
 
-尝试把 nvim 配置成 IDE, 替代部分 VSCode 功能, 解决 Apple-M1 内存不足的问题.
+把 nvim 配置为主力开发环境，逐步替代 VSCode.
 
 ## 安装 - 准备工作
 
@@ -25,6 +25,7 @@ https://github.com/BurntSushi/ripgrep
 neovim 有一些插件非常强大， 绝非颜色高亮、statusline 的花哨：
 - telescope: 文件查找、内容查找
 - nvim-treesitter: 执行语法解析，让颜色高亮更准确
+- nvim-tree: 替代 netrw, 直接按官方 readme 配置，就很好用了. 鼠标可以点击的
 
 ## LSP 配置
 

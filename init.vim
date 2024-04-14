@@ -27,6 +27,10 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " LSP
 Plug 'neovim/nvim-lspconfig'
 
+" 目录树
+Plug 'nvim-tree/nvim-tree.lua'
+"Plug 'nvim-neo-tree/neo-tree.nvim'
+
 call plug#end()
 
 "----------------------------------------
@@ -202,3 +206,20 @@ require'lspconfig'.clangd.setup{}
 " 按 F12 后跳转到定义
 nnoremap <F12> :lua vim.lsp.buf.definition()<CR>
 
+"----------------------------------------
+" nvim-tree 配置和使用
+"----------------------------------------
+:lua <<
+-- disable netrw at the very start of your init.lua
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
+
+-- optionally enable 24-bit colour
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require("nvim-tree").setup()
+.
+" 如果要分屏查看，在第二屏打开文件
+" 先执行 :vs
+" 然后在 nvim-tree 的 tab 页面中，按下回车，它会自动询问是在哪个标签页打开
