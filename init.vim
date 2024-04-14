@@ -203,6 +203,7 @@ require'nvim-treesitter.configs'.setup {
 
 :lua <<
 require'lspconfig'.clangd.setup{}
+require'lspconfig'.pyright.setup{}
 .
 
 " 按 F12 后跳转到定义
@@ -220,7 +221,12 @@ nnoremap <F12> :lua vim.lsp.buf.definition()<CR>
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  git = {
+    enable = true,
+    ignore = false,
+  },
+})
 .
 " 如果要分屏查看，在第二屏打开文件
 " 先执行 :vs
@@ -232,7 +238,8 @@ require("nvim-tree").setup()
 " 映射 \t 以自动输入 :Telescope 命令
 nnoremap <leader>t :Telescope<Space>
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>ff :Telescope find_files hidden=true no_ignore=true<CR>
+
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
