@@ -25,11 +25,19 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " LSP
+" https://www.youtube.com/watch?v=nzRnWUjGJl8&t=1385s by Prateek Raman
 Plug 'neovim/nvim-lspconfig'
+"Plug 'williamboman/mason.nvim'
 
 " 目录树
 Plug 'nvim-tree/nvim-tree.lua'
 "Plug 'nvim-neo-tree/neo-tree.nvim'
+
+" DAP(Debug Adapter Protocal)
+" https://www.youtube.com/watch?v=qgszy9GquRs by Greg Law
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-neotest/nvim-nio'
+Plug 'rcarriga/nvim-dap-ui'
 
 call plug#end()
 
@@ -202,6 +210,8 @@ require'nvim-treesitter.configs'.setup {
 ".
 
 :lua <<
+-- require("mason").setup()
+
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.pyright.setup{}
 .
@@ -243,3 +253,10 @@ nnoremap <leader>ff :Telescope find_files hidden=true no_ignore=true<CR>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+"----------------------------------------
+" DAP
+"----------------------------------------
+:lua <<
+require("dapui").setup()
+.
