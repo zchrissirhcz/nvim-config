@@ -29,7 +29,7 @@ def is_github_action() -> bool:
         return True
     return False
 
-def install_on_macos():
+def install_on_macos_or_linux():
     # 定义 Neovim 配置目录和文件路径
     config_dir = os.path.expanduser('~/.config/nvim')
     config_file = os.path.join(config_dir, 'init.vim')
@@ -63,8 +63,8 @@ def install_on_windows():
     print(f"copied to {target_file}")
 
 if __name__ == '__main__':
-    if is_macosx():
-        install_on_macos()
+    if is_macosx() or is_linux():
+        install_on_macos_or_linux()
     elif is_windows():
         install_on_windows()
 
