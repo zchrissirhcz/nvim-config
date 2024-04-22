@@ -9,7 +9,7 @@
 使用 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```bash
-export HTTPS_PROXY=127.0.0.1:port
+# export HTTPS_PROXY=127.0.0.1:port # optional
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
@@ -72,7 +72,7 @@ ln -sf `pwd`/init.vim ~/.config/nvim/init.vim
 ```
 
 ```bash
-export HTTPS_PROXY=127.0.0.1:port
+# export HTTPS_PROXY=127.0.0.1:port # optional
 nvim xxx 
 ```
 进入了 nvim， 然后执行
