@@ -22,6 +22,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 
 " 语法解析和更准确的高亮
+Plug 'tree-sitter/tree-sitter-c'
+Plug 'tree-sitter/tree-sitter-cpp'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " LSP
