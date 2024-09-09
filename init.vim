@@ -262,3 +262,59 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 :lua <<
 require("dapui").setup()
 .
+
+"----------------------------------------
+" Map Greek letters using LaTeX-style names with Ctrl-g as prefix
+"----------------------------------------
+inoremap <C-g>alpha α
+inoremap <C-g>beta β
+inoremap <C-g>gamma γ
+inoremap <C-g>delta δ
+inoremap <C-g>epsilon ε
+inoremap <C-g>zeta ζ
+inoremap <C-g>eta η
+inoremap <C-g>theta θ
+inoremap <C-g>iota ι
+inoremap <C-g>kappa κ
+inoremap <C-g>lambda λ
+inoremap <C-g>mu μ
+inoremap <C-g>nu ν
+inoremap <C-g>xi ξ
+inoremap <C-g>omicron ο
+inoremap <C-g>pi π
+inoremap <C-g>rho ρ
+inoremap <C-g>sigma σ
+inoremap <C-g>tau τ
+inoremap <C-g>upsilon υ
+inoremap <C-g>phi φ
+inoremap <C-g>chi χ
+inoremap <C-g>psi ψ
+inoremap <C-g>omega ω
+
+"----------------------------------------
+" Map uppercase Greek letters using LaTeX-style names with Ctrl-g as prefix
+"----------------------------------------
+inoremap <C-g>Alpha Α
+inoremap <C-g>Beta Β
+inoremap <C-g>Gamma Γ
+inoremap <C-g>Delta Δ
+inoremap <C-g>Epsilon Ε
+inoremap <C-g>Zeta Ζ
+inoremap <C-g>Eta Η
+inoremap <C-g>Theta Θ
+inoremap <C-g>Iota Ι
+inoremap <C-g>Kappa Κ
+inoremap <C-g>Lambda Λ
+inoremap <C-g>Mu Μ
+inoremap <C-g>Nu Ν
+inoremap <C-g>Xi Ξ
+inoremap <C-g>Omicron Ο
+inoremap <C-g>Pi Π
+inoremap <C-g>Rho Ρ
+inoremap <C-g>Sigma Σ
+inoremap <C-g>Tau Τ
+inoremap <C-g>Upsilon Υ
+inoremap <C-g>Phi Φ
+inoremap <C-g>Chi Χ
+inoremap <C-g>Psi Ψ
+inoremap <C-g>Omega Ω
